@@ -1,0 +1,22 @@
+{
+  "name": "cleverenglish",
+  "version": "1.0.0",
+  "description": "My biggest app i am really exiceted about this one",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSereda2/CleverEnglish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSereda2/CleverEnglish/issues"
+  },
+  "homepage": "https://github.com/MSereda2/CleverEnglish#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
