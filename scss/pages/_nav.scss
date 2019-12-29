@@ -1,0 +1,21 @@
+.nav {
+    background-color: rgb(76, 89, 161);
+    color: #fff;
+
+    &__list {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    &__input {
+        padding-left: 45px;
+        padding: 5px 20px;
+        border: none;
+        font-size: 2rem;
+        border-radius: 20px;
+    }
+}

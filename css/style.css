@@ -1,0 +1,44 @@
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 2rem; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+/*
+ Инструкция: Папка с комонентами которые будут использоваться в любых частях сайта. Они должны быть не зависимами. Полностью самостоятельные элементы сайта
+ */
+.container {
+  width: 1025px;
+  margin: 0 auto; }
+
+.nav {
+  background-color: #4c59a1;
+  color: #fff; }
+  .nav__list {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none; }
+  .nav__input {
+    padding-left: 45px;
+    padding: 5px 20px;
+    border: none;
+    font-size: 2rem;
+    border-radius: 20px; }
