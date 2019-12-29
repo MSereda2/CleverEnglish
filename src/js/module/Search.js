@@ -17,6 +17,7 @@ export default class Seacrh {
                 "x-rapidapi-key":"9db7ec2639mshaef0b828954e7a3p10abc7jsn21140721069e"
             }});
             this.res = res.data.results[0].definition;
+            this.global = res.data;
         } catch(error) {
             alert(error)
         }
