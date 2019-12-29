@@ -1,28 +1,26 @@
 import axios from 'axios';
 
-export default class Seacrh{
+export default class Seacrh {
 
-    constructor(word,definition) {
-        this.word = word;
-        this.definition = definition;
+    constructor(world) {
+        this.world = world;
     }
 
-    async getDefinition() {
-        const key = `26f5a4471dmsh96c5a5c8e51d6adp1fd37ejsn43ea02f07429`;
+    async getWord() {
         try {
-        const res = await axios(`https://wordsapiv1.p.mashape.com/words/${this.word}, {
-        "method": "GET",
-	    "headers": {
-		"x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
-		"x-rapidapi-key": "${key}"
-            }"`);
-            this.res = res;
-            console.log(res);
+            const res = await axios({
+                "method":"GET",
+                "url": `https://wordsapiv1.p.rapidapi.com/words/${this.world}`,
+                "headers":{
+                "content-type":"application/octet-stream",
+                "x-rapidapi-host":"wordsapiv1.p.rapidapi.com",
+                "x-rapidapi-key":"9db7ec2639mshaef0b828954e7a3p10abc7jsn21140721069e"
+            }});
+            this.res = res.data.results[0].definition;
         } catch(error) {
-            alert(`i am so sorry ${error}`);
+            alert(error)
         }
-    }
-
-
-};
-
+        
+    };
+   
+}
