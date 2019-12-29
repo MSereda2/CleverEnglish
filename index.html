@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>hackEnglish</title>
+    <link href="https://fonts.googleapis.com/css?family=Inria+Serif:300i,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="container">
+   <div class=" container-fluid">
 
-        <nav class="nav">
+        <nav class="nav ">
            <ul class="nav__list">
 
                <li class="nav__logo-box">
-                   <a class="nav_logo-text">huckEnglish</a>
+                   <a class="nav__logo-text">huckEnglish</a>
                </li>
 
               
 
                <li class="nav__form">
-                   <form action="#" class="nav__form--container">
+                   <form class="nav__form--container">
                        <i class="nav__form--icon fas fa-search"></i>
-                       <input type="text" placeholder="Look up" class="nav__input">
+                       <input type="text" placeholder="Look up" class="nav__input" id="input">
                    </form>
                </li>
 
@@ -38,8 +39,9 @@
            </ul>
         </nav>
 
-        <section class="word-meaning">
-            word-left
+        <section class="word-meaning container">
+            <h1 class="word" id="word">Motivation</h1>
+            <p class="word__describe" id="word__describe">People often need motivation to do tasks they'd prefer not to do. Do you work? Your motivation is your paycheck. Lost something? Finding it may provide motivation to tidy the house.</p>
         </section>
 
    </div>
