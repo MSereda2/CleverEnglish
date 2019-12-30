@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class=" container-fluid">
-        <nav class="nav ">
+        <nav class="nav container-fluid ">
            <ul class="nav__list">
                <li class="nav__logo-box">
                    <a class="nav__logo-text">huckEnglish</a>
@@ -32,11 +31,14 @@
         </nav>
 
         <section class="word-meaning container">
-            <h1 class="word" id="word"></h1>
-            <p class="word__describe" id="word__describe"></p>
-            <a href="#" class="word-meaning--text">Добавить слово <i class="icon__word fas fa-plus"></i></a>
+            <div class="word__voice-container">
+                <h1 class="word" id="word">Layout</h1>
+                <button class="word__voice-btn"><i class="word__voice-icon fas fa-volume-up"></i></button>
+            </div>
+            <p class="word__describe" id="word__describe">Layout is really fucking dificult thing</p>
+            <!-- <a href="#" class="word-meaning--text">Добавить слово <i class="icon__word fas fa-plus"></i></a> -->
+            <p class="word__example"></p>
         </section>
-   </div>
    
 
    <!-- <script src="js/index.js"></script> -->
